@@ -1,20 +1,17 @@
 window.onload = function() {
   "use strict";
   
-    function init() {
-      let xhr = new XMLHttpRequest();
-      let response = "";
+  function init() {
+    let xhr = new XMLHttpRequest();
+    document.getElementById('search-btn').addEventListener("click", function() {
       xhr.onreadystatechange = function() {
         if (this.readyState === 4 && this.status === 200) {
-          response = this.responseText;
+          document.getElementById('result').innerHTML = this.responseText;
         }
       };
-      xhr.open("GET", "request.php?q=definition", true);
+      xhr.open("GET", "request.php?q=" + document.getElementById('search-field').value, true);
       xhr.send();
-      
-      document.getElementById('search-btn').addEventListener("click", function() {
-        alert(response);
-      });
+    });
   }
 
   init();

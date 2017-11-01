@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  color: ghostwhite;
+  background-color: rgb(27, 24, 39);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+}
+ 
+section {
+   width: 60%;
+   height: auto;
+   margin: auto;
+}
+ 
+h2 {
+   text-align: center;
+   padding: 20px;
+   color: mediumspringgreen;
+   text-transform: uppercase;
+}
+
+h3 {
+    color: #eaff47;
+}
+
+p {
+  font-size: 0.75em;
+  text-align: center;
+}
+
+form {
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+hr {
+  border: 1px solid blueviolet;
+}
+
+#search-field {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#search-btn {
+    width: 47%;
+    padding: 12px 20px;
+    margin: 8px auto;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    background-color: deepskyblue;
+    color: ghostwhite;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+}
+
+#search-btn:hover {
+  background-color: deepPink;
+}
+
+#result h3, #result p {
+    text-align: left;
+    padding: 0;
+    text-transform: none;
+}
