@@ -33,6 +33,7 @@ h3 {
 p {
   font-size: 0.75em;
   text-align: center;
+  margin: 15px 0;
 }
 
 form {
@@ -53,8 +54,8 @@ hr {
     border-radius: 4px;
 }
 
-#search-btn {
-    width: 47%;
+#search-btn, #all-btn {
+    width: 49%;
     padding: 12px 20px;
     margin: 8px auto;
     display: inline-block;
@@ -68,7 +69,11 @@ hr {
     outline: none;
 }
 
-#search-btn:hover {
+#all-btn {
+    float: right;
+}
+
+#search-btn:hover, #all-btn:hover {
   background-color: deepPink;
 }
 
@@ -76,4 +81,8 @@ hr {
     text-align: left;
     padding: 0;
     text-transform: none;
+}
+
+#author {
+    color: deepPink;
 }
